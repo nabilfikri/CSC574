@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Page Title</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Cells that Span Many Columns</h2>
+  <table style="width:100%">
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Telephone</th>
+    </tr>
+    <tr>
+      <td>Bill Gates</td>
+      <td>55577854</td>
+      <td>55577855</td>
+    </tr>
+  </table>
+
+  <h2>Cells that Span Many Rows</h2>
+  <table style="width:100%">
+    <tr>
+      <th>Name:</th>
+      <td>Bill Gates</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telephone:</th>
+      <td>55577854</td>
+    </tr>
+    <tr>
+      <td>55577855</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
