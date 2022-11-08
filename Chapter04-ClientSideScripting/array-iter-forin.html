@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    Get car brand from array: <ol id="demo" type="i"></ol>
+
+    <script>
+
+        let cars = ["Proton", "Volvo", "BMW", "Perodua", "Toyota", "Honda"];
+
+        let li = "";
+
+        for (let index in cars) {
+            li += "<li>" + cars[index] + "</li>";
+        }
+        
+        document.getElementById("demo").innerHTML = li;
+    </script>
+
+</body>
+
+</html>
