@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Redirects</h1>
+
+    <button onclick="myFunction()">Click Me!</button>
+
+    <script>
+
+        function myFunction() {
+            let x = confirm('OK - UiTM Website \nCancel - W3 School Website');
+
+            if (x == true) {
+                window.location.href = "http://uitm.edu.my";
+            }
+            else {
+                window.location.replace("http://w3schools.com");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
