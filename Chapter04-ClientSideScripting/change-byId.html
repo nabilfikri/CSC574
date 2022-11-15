@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1 id="head1">Welcome to JavaScript!</h1>
+    <p id="demo"></p>
+
+    Value from HTML Element (h1): <input type="text" id="textfield" disabled>
+
+    <script>
+        head = document.getElementById("head1").innerHTML;       
+        console.log("Value of heading 1 is: " + head);
+
+        textfield = document.getElementById("textfield");
+        textfield.value = head;
+
+        let msg;
+        msg = 'Demo Changing HTML Element Based on Id';
+        document.getElementById("demo").innerHTML = msg;       
+    </script>
+
+</body>
+
+</html>

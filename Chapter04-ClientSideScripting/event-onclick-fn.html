@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1 onclick="this.innerHTML='You clicked on heading'">Welcome to DOM Events</h1>
+
+    <!-- invoke a function when heading is clicked -->
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+
+    <script>
+        function changeText(id) {
+            id.innerHTML = "Ooops!";
+        }
+    </script>
+
+</body>
+
+</html>

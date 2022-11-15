@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Welcome to JavaScript!</h1>
+
+    <p>Paragraph One</p>
+
+    <p>Paragraph Two</p>
+
+    <p></p>
+
+    <p>Paragraph Four</p>
+
+    Value from HTML Element (h1): <input type="text" disabled>
+
+    <script>
+        head = document.getElementsByTagName("h1")[0];
+        console.log("Value of heading 1 is: " + head.innerHTML);
+
+        textfield = document.getElementsByTagName("input")[0];
+        textfield.value = head.innerHTML;
+
+        para = document.getElementsByTagName("p");
+        para[2].innerHTML = 'Paragraph Three';
+    </script>
+
+</body>
+
+</html>

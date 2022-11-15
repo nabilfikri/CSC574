@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>onclick Event</h1>
+
+    Click to display date: <button id="myBtn">Display Date</button><br><br>
+
+    Date today is:
+
+    <p id="para"></p>
+
+    <script>
+        function displayDate() {
+            document.getElementById("para").innerHTML = Date();
+        }
+
+        document.getElementById("myBtn").onclick = displayDate;
+
+    </script>
+
+</body>
+
+</html>
