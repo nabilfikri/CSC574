@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+    Decision from prompt: <label id="demo"></label>
+
+    <script>
+        alert("Hello! I am an alert box!!");
+        
+        let person = prompt("Please enter your name");
+        
+        let decision = confirm("Are you sure to logout, " + person +"?");
+
+        document.getElementById("demo").innerHTML = decision;
+    </script>
+
+</body>
+
+</html>
