@@ -3,27 +3,27 @@
 
 <body>
 
-    <h1 class="demo">Welcome to JavaScript!</h1>
+    <h1>Welcome to JavaScript!</h1>
 
-    <p class="test">Paragraph One</p>
+    <p>Paragraph One</p>
 
-    <p class="demo">Paragraph Two</p>
+    <p>Paragraph Two</p>
 
-    <p class="test"></p>
+    <p></p>
 
-    <p class="demo">Paragraph Four</p>
+    <p>Paragraph Four</p>
 
-    Value from HTML Element (h1): <input class="test" type="text" disabled>
+    Value from HTML Element (h1): <input type="text" disabled>
 
     <script>
-        head = document.getElementsByClassName("demo")[0];
+        head = document.getElementsByTagName("h1")[0];
         console.log("Value of heading 1 is: " + head.innerHTML);
 
-        textfield = document.getElementsByClassName("test")[2]
+        textfield = document.getElementsByTagName("input")[0];
         textfield.value = head.innerHTML;
 
-        para = document.getElementsByClassName("test");
-        para[1].innerHTML = 'Paragraph Three';
+        para = document.getElementsByTagName("p");
+        para[2].innerHTML = 'Paragraph Three';
     </script>
 
 </body>
