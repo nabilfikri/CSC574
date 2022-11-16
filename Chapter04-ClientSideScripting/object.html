@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Object</h1>
+
+    <p id="demo"></p>
+
+    <script>
+
+        // object definition
+        const student = {
+            matricNo: "2025112233",
+            part: 6,
+            program: "CS110",
+            course: "CSC650",
+            getInfo: function () {
+                return this.program + " " + this.part; 
+            }
+        };
+
+
+        let msg;
+        // sample for retrieving property value from object
+        msg = 'Matric No.: ' + student.matricNo + 
+                '<br> Program: ' + student.program +
+                '<br> Course: ' + student.course;
+        
+        // Sample function calls.
+        // msg = student.getInfo();
+
+        // Sample adding new property to an object
+        // student.address = 'UiTM Perlis, 02600 Arau, Perlis';
+        // msg = 'Address: ' + student.address;
+
+        document.getElementById("demo").innerHTML = msg;
+    </script>
+
+</body>
+
+</html>
