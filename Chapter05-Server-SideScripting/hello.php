@@ -7,7 +7,7 @@
 
     <h1>Introduction to PHP</h1>
 
-    <p><?php echo "Hello World!"; ?></p>
+    <p><?php echo "This is PHP!"; ?></p>
 
     <p>This is HTML</p>
 </body>
