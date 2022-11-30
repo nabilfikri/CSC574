@@ -15,8 +15,8 @@
         echo "<br>";
 
         $string = "This is my string";
-        $string = $string ?? "Default value";
-        echo $string;
+        $result = $string ?? "Default value";
+        echo $result;
     ?>
 
 
