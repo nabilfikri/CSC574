@@ -1,14 +1,12 @@
-<?php
-    // session_start();
+<?php require_once './header.php'; ?>
 
+<?php
     // if user not logged in, redirect user to signin.php
     // if(!isset($_SESSION["loggedin"])){
     //     header("location: signin.php");
     //     exit;
     // }
 ?>
-
-<?php require_once './header.php'; ?>
 
 <h1>My Account</h1>
 

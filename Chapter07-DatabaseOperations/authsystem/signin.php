@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    
     
     $usernameErr = $passwordErr = $loginErr = "";
     $username = $password = "";
@@ -38,8 +38,8 @@
 
                 if(password_verify($password, $password_db)) {
                     //login success
-                    $loginErr = 'login success!';
-                    $_SESSION["loggedin"] = true;
+                    session_start();
+                    $_SESSION["loggedin"] = "yes";
                     $_SESSION["id"] = $id;
                     $_SESSION["username"] = $username;
                     $_SESSION["fullname"] = $fullname;
