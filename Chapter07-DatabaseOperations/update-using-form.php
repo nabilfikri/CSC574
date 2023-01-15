@@ -14,18 +14,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             WHERE productLine='$update_id'";
 
     //Send SQL query to MYSQL
-    // if (mysqli_query($conn, $sql)) {
-    //     //check if the query affect on expected one row
-    //     if(mysqli_affected_rows($conn) == 1){
-    //         echo "Record updated successfully";
-    //     }
-    //     else {
-    //         echo "None of the record updated";
-    //     }
-    // }
-    // else {
-    //     echo "Error updating record: " . $sql . "<br>" . mysqli_error($conn);
-    // }
+    if (mysqli_query($conn, $sql)) {
+        //check if the query affect on expected one row
+        if(mysqli_affected_rows($conn) == 1){
+            echo "Record updated successfully";
+        }
+        else {
+            echo "None of the record updated";
+        }
+    }
+    else {
+        echo "Error updating record: " . $sql . "<br>" . mysqli_error($conn);
+    }
 
     session_destroy();
     

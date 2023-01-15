@@ -8,18 +8,18 @@ $sql = "UPDATE productlines
         WHERE productLine='Super Car'";
 
 //Send SQL query to MYSQL
-// if (mysqli_query($conn, $sql)) {
-//     //check if the query affect on expected one row
-//     if(mysqli_affected_rows($conn) == 1){
-//         echo "Record updated successfully";
-//     }
-//     else {
-//         echo "None of the record updated";
-//     }
-// } 
-// else {
-//     echo "Error updating record: " . $sql . "<br>" . mysqli_error($conn);
-// }
+if (mysqli_query($conn, $sql)) {
+    //check if the query affect on expected one row
+    if(mysqli_affected_rows($conn) == 1){
+        echo "Record updated successfully";
+    }
+    else {
+        echo "None of the record updated";
+    }
+} 
+else {
+    echo "Error updating record: " . $sql . "<br>" . mysqli_error($conn);
+}
 
 //Close db connection
 mysqli_close($conn);

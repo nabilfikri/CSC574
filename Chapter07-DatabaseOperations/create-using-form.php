@@ -11,12 +11,12 @@
         $sql = "INSERT into productlines (productLine, textDescription) VALUES ('$productLine', '$description')";
 
         //Send SQL query to MYSQL
-        // if (mysqli_query($conn, $sql)) {
-        //     echo "New record created successfully";
-        // }
-        // else {
-        //     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-        // }
+        if (mysqli_query($conn, $sql)) {
+            echo "New record created successfully";
+        }
+        else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        }
 
         //Close db connection
         mysqli_close($conn);
