@@ -1,6 +1,6 @@
+<?php require_once './header.php'; ?>
+
 <?php 
-    
-    
     $usernameErr = $passwordErr = $loginErr = "";
     $username = $password = "";
 
@@ -38,11 +38,11 @@
 
                 if(password_verify($password, $password_db)) {
                     //login success
-                    session_start();
                     $_SESSION["loggedin"] = "yes";
                     $_SESSION["id"] = $id;
                     $_SESSION["username"] = $username;
                     $_SESSION["fullname"] = $fullname;
+                    $_SESSION["message"] = "Login successfull";
                     //TODO: role session variable
 
                     header("location: home.php");
@@ -63,7 +63,7 @@
     }
 ?>
 
-<?php require_once './header.php'; ?>
+
 
 <h1>Sign In</h1>
 

@@ -27,10 +27,12 @@
       <?php } ?>
   </ul>
 
+  <!-- <?php echo var_dump($_SESSION); ?> -->
+
   <?php
     if(isset($_SESSION["message"]) == true) {
       echo '<p>' . $_SESSION["message"] . '</p>';
-      $_SESSION["message"] = null;
+      unset($_SESSION["message"]);
     }
-    
   ?>
+

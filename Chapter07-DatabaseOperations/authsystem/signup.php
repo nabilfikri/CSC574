@@ -1,3 +1,5 @@
+<?php require_once './header.php'; ?>
+
 <?php
     $fullnameErr = $emailErr = $usernameErr = $passwordErr = "";
     $fullname = $email = $username = $password = "";
@@ -8,7 +10,7 @@
         } else {
             $fullname = test_input($_POST["fullname"]);
             // check if name only contains letters and whitespace
-            if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+            if (!preg_match("/^[a-zA-Z-' ]*$/",$fullname)) {
                 $nameErr = "Only letters and white space allowed";
             }
         }
@@ -56,8 +58,7 @@
     
             //Send SQL query to MYSQL
             if (mysqli_query($conn, $sql)) {
-                session_start();
-                $_SESSION["message"] = 'New record created successfully, please login';
+                $_SESSION["message"] = 'Sign up successfull, please sign in.';
                 header("location: signin.php");
             }
             else {
@@ -76,8 +77,6 @@
         return $data;
     }
 ?>
-
-<?php require_once './header.php'; ?>
 
 <h1>Sign Up</h1>
 
